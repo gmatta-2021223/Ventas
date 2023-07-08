@@ -1,0 +1,152 @@
+.botonLogin{
+
+	-fx-background-color:  #3858AD;
+	-fx-cursor: hand;
+
+}
+
+.menu-bar { /* Color de Fondo de Módulos - Reportes - ? */
+    
+    -fx-cursor: hand;
+    -fx-background-color: #3858AD ;
+    -fx-border-width: 2.0;
+
+}
+
+.menu-bar .label { /* Módulos - Reportes - ? (Solo a las letras) */
+    
+    -fx-cursor: hand;
+    -fx-font-size: 20.0 pt;
+    -fx-font-family: "MS Outtlook";
+    -fx-text-fill: black;
+    -fx-font-weight: bold; 
+    -fx-padding: 10.0px;
+    
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: #F2F2F2 ;
+    
+    
+}
+.menu-bar:pressed{
+    
+    -fx-background-color:  #3858AD;
+    
+}
+
+.menu-item {
+    -fx-background-color:  #3858AD ;
+    -fx-background: gray ;
+    -fx-border-width: 2.0;
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: black;
+    -fx-background:  #3858AD ;
+}
+.menu-item .label:hover{
+    -fx-font-size: 14.0 pt;
+    -fx-background: #F2F2F2 ;
+    -fx-text-fill: black;
+}
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:white ;
+    -fx-border-width: 0.2px;
+    -fx-border-color: black;
+    /** -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; 
+    -fx-opacity: 0.9;*/
+}
+
+
+/* Opciones de Módulos */
+
+.buttonModulos{
+    
+   -fx-font-family: "MS Outtlook";
+   -fx-cursor: hand;
+   -fx-background-color:  #3858AD;
+   -fx-border-color: black;
+   -fx-text-fill: black;
+    
+}
+
+.buttonModulos:hover{
+    
+   -fx-font-family: "MS Outtlook";
+   -fx-cursor: hand;
+   -fx-background-color: #F2F2F2;
+   -fx-border-color: black;
+   -fx-text-fill: black;
+    
+}
+
+.buttonModulos:pressed{
+    
+   -fx-font-family: "MS Outtlook";
+   -fx-cursor: hand;
+   -fx-background-color: #c1bebeff;
+   -fx-border-color: black;
+   -fx-text-fill: black;
+    
+}
+
+/* Boton Cerrar Sesión */
+
+.buttonCerrarSesion{
+    
+    -fx-cursor: hand;
+    -fx-background-color: #FFFFFF;
+     
+ }
+ 
+ .buttonCerrarSesion:hover{
+ 
+    -fx-cursor: hand;
+    -fx-background-color: #ff9c9c;
+ 
+ }
+ 
+ .buttonCerrarSesion:pressed{
+     
+    -fx-cursor: hand;
+    -fx-background-color: #ff4747;
+     
+ }
+
+
+/* Botones Nuevo, Eliminar, Reporte, Modificar */
+
+.buttonCrud{
+
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #000000;
+    -fx-cursor: hand;
+    -fx-transition: all 0.5s;
+
+}
+.buttonCrud:hover{
+
+    -fx-background-color: #F2F2F2;
+    -fx-border-color: #000000;
+
+}
+
+.buttonCrud:pressed{
+
+   -fx-background-color: #c1bebeff;
+   -fx-border-color: #000000;
+   -fx-text-fill: white;
+
+}
+
+/* Separador */
+
+.separador{
+    
+    -fx-background-color:#000000;
+    
+}

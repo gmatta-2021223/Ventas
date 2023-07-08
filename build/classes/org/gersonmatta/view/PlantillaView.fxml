@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" style="-fx-background-color: #E2E6ED;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="300.0" style="-fx-background-color: #3858AD;">
+         <children>
+            <Pane layoutX="29.0" layoutY="41.0" prefHeight="162.0" prefWidth="242.0" style="-fx-border-color: #000000; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="169.0" layoutX="71.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Cliente.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="83.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente">
+                     <font>
+                        <Font name="MS Outlook" size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="btnNuevo" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="240.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="242.0" style="-fx-border-color: #000000; -fx-border-width: 2;" styleClass="buttonCrud" stylesheets="@../resource/style.css" text="Nuevo" textFill="#16c910">
+               <font>
+                  <Font name="MS Outlook" size="20.0" />
+               </font>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnEliminar" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="343.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="242.0" style="-fx-border-color: #000000; -fx-border-width: 2;" styleClass="buttonCrud" stylesheets="@../resource/style.css" text="Eliminar" textFill="RED">
+               <font>
+                  <Font name="MS Outlook" size="20.0" />
+               </font>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnEditar" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="443.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="242.0" style="-fx-border-color: #000000; -fx-border-width: 2;" styleClass="buttonCrud" stylesheets="@../resource/style.css" text="Editar" textFill="#d4d71a">
+               <font>
+                  <Font name="MS Outlook" size="20.0" />
+               </font>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnReporte" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="541.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="242.0" style="-fx-border-color: #000000; -fx-border-width: 2;" styleClass="buttonCrud" stylesheets="@../resource/style.css" text="Reporte" textFill="#0e3bc3">
+               <font>
+                  <Font name="MS Outlook" size="20.0" />
+               </font>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </Button>
+            <ImageView fx:id="imgNuevo" fitHeight="55.0" fitWidth="65.0" layoutX="64.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Nuevo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEliminar" fitHeight="55.0" fitWidth="65.0" layoutX="64.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Eliminar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEditar" fitHeight="55.0" fitWidth="65.0" layoutX="64.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Editar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgReporte" fitHeight="55.0" fitWidth="65.0" layoutX="64.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Reporte.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tblCliente" layoutX="325.0" layoutY="325.0" prefHeight="305.0" prefWidth="953.0">
+        <columns>
+          <TableColumn fx:id="colCodigoCliente" prefWidth="162.0" text="Código" />
+          <TableColumn fx:id="colDPICliente" prefWidth="203.0" text="DPI" />
+            <TableColumn fx:id="colNombresCliente" prefWidth="254.0" text="Nombres" />
+            <TableColumn fx:id="colDireccionCliente" prefWidth="213.0" text="Dirección" />
+            <TableColumn fx:id="colEstadoCliente" prefWidth="120.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Button alignment="CENTER_RIGHT" layoutX="1036.0" layoutY="20.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="242.0" style="-fx-border-color: #000000; -fx-border-width: 2;" styleClass="buttonCrud" stylesheets="@../resource/style.css" text="Regresar">
+         <font>
+            <Font name="MS Outlook" size="20.0" />
+         </font>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="46.0" layoutX="1073.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Regresar.png" />
+         </image>
+      </ImageView>
+      <Line endX="813.60009765625" layoutX="463.0" layoutY="90.0" startX="-138.0" stroke="#3858ad" strokeWidth="2.0" />
+      <Text fill="#3858ad" layoutX="420.0" layoutY="59.0" stroke="#3858ad" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventana Cliente" textAlignment="CENTER">
+         <font>
+            <Font name="MS Outlook" size="30.0" />
+         </font>
+      </Text>
+      <GridPane fx:id="grpFechas" alignment="CENTER" layoutX="297.0" layoutY="112.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="189.0" prefWidth="953.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="5.0" prefWidth="5.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtCodigoCliente" GridPane.columnIndex="1" />
+            <TextField fx:id="txtDPICliente" GridPane.columnIndex="4" />
+            <TextField fx:id="txtNombresCliente" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtEstadoCliente" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtDireccionCliente" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" text="Código" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" text="Nombres" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" text="Estado" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" text="DPI" textAlignment="CENTER" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" text="Dirección" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
